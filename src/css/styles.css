@@ -1,0 +1,81 @@
+:root {
+  --corner-color: #2094fa;
+  --corner-thickness: 4px;
+  --corner-offset: -4px;
+}
+
+#corner-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: var(--corner-offset);
+  margin-left: var(--corner-offset);
+  border-top: var(--corner-thickness) solid var(--corner-color);
+  border-left: var(--corner-thickness) solid var(--corner-color);
+}
+
+#corner-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: var(--corner-offset);
+  margin-right: var(--corner-offset);
+  border-top: var(--corner-thickness) solid var(--corner-color);
+  border-right: var(--corner-thickness) solid var(--corner-color);
+}
+
+#corner-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin-bottom: var(--corner-offset);
+  margin-left: var(--corner-offset);
+  border-bottom: var(--corner-thickness) solid var(--corner-color);
+  border-left: var(--corner-thickness) solid var(--corner-color);
+}
+
+#corner-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  margin-bottom: var(--corner-offset);
+  margin-right: var(--corner-offset);
+  border-bottom: var(--corner-thickness) solid var(--corner-color);
+  border-right: var(--corner-thickness) solid var(--corner-color);
+}
+
+#screenshot-rectangle-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 900000;
+  height: 100%;
+  width: 100%;
+  max-width: max-content;
+  max-height: 20px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  user-select: none;
+}
+
+#screenshot-rectangle {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 1000000;
+
+  width: 300px;
+  height: 150px;
+  resize: both;
+
+  background: rgba(1, 1, 1, 0.13);
+}

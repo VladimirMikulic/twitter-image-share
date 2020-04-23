@@ -1,0 +1,17 @@
+{
+  "name": "Twitter Image Share",
+  "version": "1.0",
+  "description": "Chrome Extension that allows you to screenshot a part of a website and share it on Twitter",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "clipboardRead"
+  ],
+  "browser_action": {},
+  "background": {
+    "scripts": [
+      "./src/background.js"
+    ]
+  }
+}

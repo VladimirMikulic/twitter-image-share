@@ -1,0 +1,24 @@
+{
+  "name": "twitter-image-share",
+  "version": "1.0.0",
+  "description": "Chrome Extension that allows you to screenshot a part of a website and share it on Twitter",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "parcel watch src/content-scripts/index.js --out-file dist/main.js",
+    "build": "parcel build src/content-scripts/index.js --out-file dist/main.js --no-source-maps"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "keywords": [],
+  "author": "Vladimir Mikulic <vladimir.mikulic2@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.5",
+    "interactjs": "^1.9.9"
+  }
+}
