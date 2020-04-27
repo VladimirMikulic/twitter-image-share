@@ -1,4 +1,6 @@
 // The file runs when the extension's icon is clicked
+// Better approach would be to convert the area x,y width, height to canvas
+// without using the library like this extension does https://github.com/mashtullah/cropshot
 import html2canvas from 'html2canvas';
 import initScreenshotRectangle from './screenshotRectangle';
 
