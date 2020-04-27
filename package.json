@@ -1,7 +1,7 @@
 {
   "name": "twitter-image-share",
   "version": "1.0.0",
-  "description": "Chrome Extension that allows you to screenshot a part of a website and share it on Twitter",
+  "description": "Chrome Extension that allows you to screen-shot a part of a website and share it on Twitter",
   "main": "src/index.js",
   "scripts": {
     "dev": "parcel watch src/content-scripts/index.js --out-file dist/main.js",
